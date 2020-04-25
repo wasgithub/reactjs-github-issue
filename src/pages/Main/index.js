@@ -4,7 +4,9 @@ import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
 
 import api from '../../services/api';
 
-import { Container, SubmitButton, Form, List } from './styles';
+import Container from '../../components/Container';
+
+import { SubmitButton, Form, List } from './styles';
 
 export default function Main() {
   const [newRepo, setNewRepo] = useState('');
@@ -45,7 +47,7 @@ export default function Main() {
   return (
     <Container>
       <h1>
-        <FaGithubAlt />
+        <FaGithubAlt className="icon" />
         Repositórios
       </h1>
 
